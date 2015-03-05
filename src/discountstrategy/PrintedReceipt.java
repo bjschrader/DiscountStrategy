@@ -6,6 +6,8 @@ package discountstrategy;
  */
 public class PrintedReceipt implements ReceiptOutputStrategy{
     private String prodID;
+    private String customerID;
+    private LineItem[] lineItem;
 
     @Override
     public void outputReceipt(String data) {

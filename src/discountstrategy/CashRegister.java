@@ -4,8 +4,9 @@ package discountstrategy;
  *
  * @author Brian Schrader <brian@evolmarketing.com>
  */
-public class Register {
+public class CashRegister {
 
+    
     private ReceiptOutputStrategy receipt;
 
     /**
@@ -13,7 +14,7 @@ public class Register {
      *
      * @param customerID
      */
-    public Register(int customerID) {
+    public CashRegister(int customerID) {
         receipt = new PrintedReceipt();
 
     }
@@ -31,6 +32,6 @@ public class Register {
     }
 
     public final void printReceipt() {
-//        System.out.println(receipt.outputMessage());
+        System.out.println(receipt.outputMessage());
     }
 }
